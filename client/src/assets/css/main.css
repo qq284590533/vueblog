@@ -1,0 +1,334 @@
+.main-content>.block-box .tit{
+  height: 40px;
+  line-height: 40px;
+  background:#424242;
+  padding: 0 20px;
+}
+
+.main-content>.block-box .tit i{
+  display: inline-block;
+  color: #ececec;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.main-content>.block-box .tit h3{
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  color: #ececec;
+  font-size: 14px;
+}
+
+.back .main-content>.block-box{
+  margin-bottom: 40px;
+  overflow: hidden;
+  background: #f6f6f6;
+  box-shadow: 3px 3px 10px rgba(153, 153, 153, .6);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  border-radius: 4px;
+}
+
+.night .back .main-content>.block-box{
+  background-color: #717171;
+  color: #ececec;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+}
+
+.main-content>.block-box .block-content{
+  position: relative;
+  padding: 20px;
+  transition: padding-bottom .4s ease;
+}
+
+.block-content .info-list li{
+  height: 31px;
+  margin-bottom: 10px;
+}
+
+.block-content .info-list li>span{
+  display: inline-block;
+  line-height: 31px;
+}
+
+.block-box .btns {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    clear: both;
+    transition: all .4s ease;
+    opacity: 0;
+  }
+  
+  .block-box .btns.edited{
+    bottom: 20px;
+    opacity: 1;
+  }
+
+  .btns .mu-raised-button{
+    color: #414141;
+    background: #b9b9b9;
+    margin: 0 10px;
+  }
+  
+  .btns .mu-raised-button-label{
+    padding: 0 5px;
+  }
+  
+  .night .input-box input{
+    color: #ececec;
+  }
+  
+  .main-content>.block-box .block-content.edited{
+    padding-bottom: 56px;
+  }
+  
+  .block-content .info-list,.block-content .head-box{
+    float: left;
+    margin-bottom: 20px;
+    min-width: 258px;
+  }
+  .block-content .info-list{
+    width: 30%;
+  }
+  .block-content .head-box{
+    width: 30%;
+  }
+  .input-box {
+    display: inline-block;
+    border-bottom: 1px solid #414141;
+  }
+  .night .input-box{
+    border-color: #ececec;
+  }
+  .input-box input{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border: none;
+    background:none;
+    transition: color .2s ease;
+  }
+  
+  .head-box .img-box{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    margin-top: 13px;
+  }
+  
+  .head-box .img-box img{
+    width: 120px;
+    height: 120px;
+  }
+  
+  .head-box .upload-headimg{
+    position: relative;
+    width: 120px;
+    height: 36px;
+    border: none;
+    overflow: hidden;
+    margin-top: 20px;
+    color: #414141;
+    background: #b9b9b9;
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.117647), 0 1px 4px rgba(0,0,0,.117647);
+    box-shadow: 0 1px 6px rgba(0,0,0,.117647), 0 1px 4px rgba(0,0,0,.117647);
+    border-radius: 3px; 
+  }
+  
+  .head-box .upload-headimg:hover{
+    background: rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.117647), 0 1px 4px rgba(0,0,0,.117647);
+    box-shadow: 0 1px 6px rgba(0,0,0,.117647), 0 1px 4px rgba(0,0,0,.117647);
+  }
+  .head-box .upload-headimg label{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+  }
+  
+  .file-button{
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+  
+  }
+  
+  .mu-raised-button-label{
+    cursor: pointer;
+  }
+  
+  .popup-top{
+      width: 200px;
+      height: 40px;
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      line-height: 36px;
+      color: rgba(255, 255, 255, 0.8);
+      border-radius: 0 0 50% 50%;
+  }
+  
+  .page{
+    margin-top: 30px;
+  }
+
+  .main-content .mu-table{
+    background-color: #ececec;
+    text-align: center;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  }
+
+  .night .main-content .mu-table{
+    background-color: rgb(125,125,125);
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  }
+
+  .main-content .mu-th-wrapper,.main-content .mu-td{
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .night .mu-th{
+    color: #ececec;
+  }
+
+  .main-content .mu-table .iconfont{
+    font-size: 20px;
+  }
+
+  .night .mu-text-field-input{
+    color: #ececec;
+  }
+
+  .night .mu-text-field-line{
+    background-color: #aaa
+  }
+
+  .night .mu-text-field-focus-line{
+    background-color: #ddd
+  }
+
+  .page .mu-pagination-item{
+
+    font-size: 14px;
+    height: 26px;
+    min-width: 26px;
+  }
+
+  .page .mu-pagination-svg-icon{
+    width: 22px;
+    height: 22px;
+  }
+
+.popup-top{
+	width: 200px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.6) !important;
+	text-align: center;
+	line-height: 36px;
+	color: rgba(255, 255, 255, 0.8);
+	border-radius: 0 0 50% 50%;
+}
+
+.item-name{
+	font-size:22px;
+	margin-top: 30px;
+	line-height: 40px;
+	color: #555;
+	margin-bottom: 30px;
+}
+.item-name span{
+	font-size: 18px;
+	color:#bbb;
+}
+
+.date{
+	color: #bbb;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.mu-timeline-item-icon{
+  background-color: #fff !important;
+  transition: background-color .3s ease;
+}
+
+.night .mu-timeline-item-icon{
+  background-color: #333333 !important;
+}
+
+.night .item-name{
+	color: #bbb;
+}
+.night .item-name span{
+	color: #aaa;
+}
+
+.item-content .blogTit{
+  font-size: 16px;
+  line-height: 20px;
+  color: #888;
+}
+
+.mu-timeline-item{
+  padding-bottom: 20px;
+}
+.mu-timeline-item .mu-timeline-item-content{
+  width: 90% !important;
+  padding-bottom: 0 !important;
+  border: none;
+}
+
+.item-content .link{
+  display: block;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #9e9e9e;
+}
+
+.item-content .link:hover{
+  border-color: #333;
+}
+
+.night .item-content .link:hover{
+  border-color: #eee;
+}
+
+.item-content .link:hover .blogTit{
+  color: #333;
+}
+.item-content .link:hover .date{
+  color: #888;
+}
+.night .item-content .link .blogTit{
+  color: #bbb;
+}
+
+.night .item-content .link .date{
+  color: #999;
+}
+.night .item-content .link:hover .blogTit{
+  color: #eee;
+}
+
+.night .item-content .link:hover .date{
+  color: #bbb;
+}
+
+

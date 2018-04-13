@@ -1,0 +1,117 @@
+@charset "utf-8";
+.v-note-wrapper,
+.v-show-content,
+.v-show-content-html {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+  background: transparent !important;
+}
+.md-view.v-note-wrapper,
+.md-view .v-show-content,
+.md-view .v-show-content-html {
+	padding: 0 !important;
+}
+
+.night .v-note-wrapper .v-note-op .left .op-icon.selected,.night .v-note-wrapper .v-note-op .right .op-icon.selected{
+	color: #292929;
+	background: #757575;
+}
+
+.article-cont .v-note-img-wrapper i{
+	top: 45px;
+	right: 20px;
+}
+
+.article-cont .v-note-img-wrapper{
+	margin-left: 440px
+}
+
+
+@media screen and (max-width: 1024px){
+  .front .main-content,.article-cont .v-note-img-wrapper{
+    margin-left: 385px;
+  }
+}
+@media screen and (max-width: 900px){
+  .front .main-content,.article-cont .v-note-img-wrapper{
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 667px){
+  .front .main-content,.article-cont .v-note-img-wrapper{
+    margin-left: 45px;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .front .main-content,.article-cont .v-note-img-wrapper{
+    margin-left: 0;
+  }
+}
+
+
+.v-note-wrapper .v-note-panel {
+  box-shadow: none !important;
+  font-size: 14px;
+  color: #4a4a4a;
+  font-family: "微软雅黑";
+  line-height: 28px;
+}
+.v-note-wrapper .v-note-panel .v-note-show {
+	transition: none !important;
+	background: transparent !important;
+}
+
+.markdown-body pre code {
+  font-size: 14px;
+}
+
+.code-github .hljs {
+  background-color: #eee;
+}
+
+.night .md-view.v-note-wrapper .v-note-panel{
+	background: none !important;
+}
+
+.night .v-note-wrapper .v-note-panel {
+	color: #bfbfbf;
+	background: #292929;
+}
+
+.night .markdown-body .highlight pre,.night .markdown-body pre{
+	background-color: transparent !important;
+}
+
+.night .v-note-wrapper .v-note-panel .v-note-edit.divarea-wrapper{
+	background-color: transparent !important;  
+}
+
+.auto-textarea-wrapper .auto-textarea-input{
+	background-color: transparent !important;  	
+}
+
+.md-edit.v-note-wrapper .v-note-panel{
+	border: 1px solid #e5e5e5;
+	border-top: none;
+}
+.night .md-edit.v-note-wrapper .v-note-panel{
+	border: none;
+}
+
+.night .auto-textarea-wrapper .auto-textarea-input{
+  color: #bfbfbf;
+}
+
+.v-note-wrapper .v-note-panel .v-note-show .v-show-content, .v-note-wrapper .v-note-panel .v-note-show .v-show-content-html{
+  background: none !important;
+}
+
+.night .v-note-wrapper .v-note-op{
+	background: #424242;
+}
+
+.night .v-note-wrapper .v-note-op .left .op-icon-divider,.night .v-note-wrapper .v-note-op .right .op-icon-divider {
+	border-left: 1px solid #757575;
+}
