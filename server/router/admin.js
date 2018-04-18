@@ -197,8 +197,8 @@ router.post('/deleteTag', function(req, res, next){
     })
 });
 
-// let transferPath = '../dist/static/blogimg/transfer';
-let transferPath = '../../client/static/blogimg/transfer';
+let transferPath = '../dist/static/blogimg/transfer';
+// let transferPath = '../../client/static/blogimg/transfer';
 //markdown 上传图片
 router.post('/imgAdd',function(req, res, next){
     let imgdata = req.body.data;
@@ -269,8 +269,8 @@ moveImg = (id) => {
     //读取文件目录
     fs.readdir(path.join(__dirname, transferPath),function(err,files){
         if(files){
-            // let blogImgPath = '../dist/static/blogimg/'+id;
-            let blogImgPath = '../../client/static/blogimg/'+id;
+            let blogImgPath = '../dist/static/blogimg/'+id;
+            // let blogImgPath = '../../client/static/blogimg/'+id;
 
             //根据blog id创建博客图片文件夹
             if (!fs.existsSync(path.join(__dirname, blogImgPath))) {

@@ -16,9 +16,9 @@ export default {
   },
   watch: {
     '$route' (to, from) {
-      const toMeta = to.matched[0].meta
+      const toMeta = to.matched[0].meta.code
       if(from.matched.length){
-        const fromMeta = from.matched[0].meta
+        const fromMeta = from.matched[0].meta.code
         this.transitionName = toMeta < fromMeta ? 'slide-up' : 'slide-down';
       }
 

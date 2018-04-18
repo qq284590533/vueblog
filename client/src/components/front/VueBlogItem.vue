@@ -24,7 +24,7 @@ export default {
   display: block;
   border-radius: 4px;
   padding: 10px 20px;
-  box-shadow: 0 0 1px #aaa;
+  box-shadow: 0 0 1px #666;
   transition: box-shadow .2s ease;
   color: #4a4a4a;
   cursor: default;

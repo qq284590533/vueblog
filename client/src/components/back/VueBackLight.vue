@@ -33,6 +33,7 @@ export default {
       axios.post('login_out/logout')
 			.then(function (response) {
         if(response.data.status){
+          _this.$store.commit('changeLogin');
           _this.$router.push({path: '/home'});
           console.log(response.data.msg);
         }else{

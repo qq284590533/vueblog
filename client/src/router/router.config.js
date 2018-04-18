@@ -31,57 +31,57 @@ export default new Router({
         {
             path: '/',
             component: VueFront,
-            meta: 1,
+            meta: {code:1},
             children: [{
                     path: '/',
-                    meta: 1,
+                    meta: {code:1},
                     component: VueIndex
                 },
                 {
                     path: '/home',
-                    meta: 1,
+                    meta: {code:1},
                     name: 'homePage',
                     component: VueIndex
                 },
                 {
                     path: '/categories',
-                    meta: 1,
+                    meta: {code:1},
                     name: 'categories',
                     component: VueCategories
                 },
                 {
                     path: '/categories/:categ',
-                    meta: 1,
+                    meta: {code:1},
                     name: 'categoryItem',
                     component: VueCategoryItem
                 },
                 {
                     path: '/tags',
-                    meta: 1,
+                    meta: {code:1},
                     name: 'tags',
                     component: VueTags
                 },
                 {
                     path: '/tags/:tag',
-                    meta: 1,
+                    meta: {code:1},
                     name: 'tagItem',
                     component: VueTagItem
                 },
                 {
                     path: '/archives',
-                    meta: 1,
+                    meta: {code:1},
                     name: 'archives',
                     component: VueArchives
                 },
                 {
                     path: '/about',
-                    meta: 1,
+                    meta: {code:1},
                     name: 'about',
                     component: VueAbout
                 },
                 {
                     path: '/article/:id',
-                    meta: 1,
+                    meta: {code:1},
                     name: 'article',
                     component: VueArticle
                 },
@@ -90,46 +90,46 @@ export default new Router({
         {
             path: '/admin',
             component: VueBack,
-            meta: 2,
+            meta: {code:2,requiresAuth:true},
             children: [
                 {
                     path: '/',
-                    meta: 2,
+                    meta: {code:2,requiresAuth:true},
                     component: VueBackOverview
                 },
                 {
                     path: '/admin/overview',
-                    meta: 2,
+                    meta: {code:2,requiresAuth:true},
                     name: 'overview',
                     component: VueBackOverview
                 },
                 {
                     path: '/admin/blogging',
-                    meta: 2,
+                    meta: {code:2,requiresAuth:true},
                     name: 'blogging',
                     component: VueBackNewBlog
                 },
                 {
                     path: '/admin/blogging/:id',
-                    meta: 2,
+                    meta: {code:2,requiresAuth:true},
                     name: 'editblog',
                     component: VueBackNewBlog
                 },
                 {
                     path: '/admin/article',
-                    meta: 2,
+                    meta: {code:2,requiresAuth:true},
                     name: 'articleset',
                     component: VueBackArticleSet
                 },
                 {
                     path: '/admin/categories',
-                    meta: 2,
+                    meta: {code:2,requiresAuth:true},
                     name: 'categoriesset',
                     component: VueBackCategoriesSet
                 },
                 {
                     path: '/admin/tags',
-                    meta: 2,
+                    meta: {code:2,requiresAuth:true},
                     name: 'tagsset',
                     component: VueBackTagsSet
                 }
@@ -139,7 +139,7 @@ export default new Router({
             path: '/login',
             name: 'login',
             component: VueBackLogin,
-            meta: 3,
+            meta: {code:3},
         }
     ]
 })

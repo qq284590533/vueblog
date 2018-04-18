@@ -34,7 +34,24 @@ let getTime = Vue.filter('getTime');
 Vue.use(MuseUI)
 
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+
+//路由校验钩子
+router.beforeEach((to, from, next) => {
+    if (to.matched.some(m => m.meta.requiresAuth)) {
+        // 对路由进行验证     
+        if (store.state.isLogin) { // 已经登陆 
+            next()// 正常跳转到你设置好的页面 
+        }else {
+            console.log(store.state.isLogin)
+            // 未登录则跳转到登陆界面，query:{ Rurl: to.fullPath}表示把当前路由信息传递过去方便登录后跳转回来；
+            next({ path: '/login'})
+        }
+    } else {
+        next()
+    }
+})
+
 
 /* eslint-disable no-new */
 new Vue({

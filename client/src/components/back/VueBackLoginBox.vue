@@ -37,6 +37,7 @@ export default {
 				_this.message = response.data.msg;
 				_this.open('top');
 				if(response.data.code==0){
+					_this.$store.commit('changeLogin');
 					_this.$router.push({path: '/admin'})
 				}
 			})
@@ -55,7 +56,12 @@ export default {
 					}
 				}
 			};
-		}
+		},
+
+	},
+	
+	beforeDestroy(){
+		document.onkeydown = null
 	},
 	
   watch: {

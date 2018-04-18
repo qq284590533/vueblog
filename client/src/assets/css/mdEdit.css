@@ -63,10 +63,24 @@
 	background: transparent !important;
 }
 
+.markdown-body code{
+  background-color: #d6d6d6 !important;
+}
+
 .markdown-body pre code {
   font-size: 14px;
 }
 
+.night .markdown-body code{
+  background-color: #4a4a4a !important;
+}
+.markdown-body blockquote{
+  border-left-color: #ababab !important;
+  background-color: #d6d6d6 !important;
+}
+.night .markdown-body blockquote{
+  background-color: #494949 !important;
+}
 .code-github .hljs {
   background-color: #eee;
 }
@@ -80,8 +94,12 @@
 	background: #292929;
 }
 
+.markdown-body .highlight pre,.markdown-body pre{
+	background-color: #d6d6d6 !important;
+}
+
 .night .markdown-body .highlight pre,.night .markdown-body pre{
-	background-color: transparent !important;
+	background-color: #4a4a4a !important;
 }
 
 .night .v-note-wrapper .v-note-panel .v-note-edit.divarea-wrapper{
