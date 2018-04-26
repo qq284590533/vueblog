@@ -13,19 +13,19 @@ import './assets/css/reset.css'
 import MuseUI from 'muse-ui'
 import store from './store'
 import axios from 'axios'
-import moment from 'moment'
-moment.locale('zh-cn')
+import dayjs from 'dayjs'
+// moment.locale('zh-cn')
 
 //全局设置baseURL  默认请求路由'/api'
 axios.defaults.baseURL = '/api'
 
 // 注册全局过滤器
 Vue.filter('getTime', function (value) {
-    return moment(value).format('YYYY-MM-DD HH:mm:ss');
+    return dayjs(value).format('YYYY-MM-DD HH:mm:ss');
 });
 
 Vue.filter('getMoment', function () {
-    return moment().format('YYYY年M月D日 HH:mm:ss');
+    return dayjs().format('YYYY年M月D日 HH:mm:ss');
 });
 
 // 获取已注册过滤器

@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import moment from 'moment'
 export default {
 	
 	data(){
@@ -39,7 +38,7 @@ export default {
 	},
 
 	mounted(){
-		this.year = moment().format('YYYY');
+		this.year = new Date().getFullYear();
 	}
 }
 </script>
