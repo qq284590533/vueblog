@@ -2,25 +2,24 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 //前端
-const VueFront = resolve => require(['@/components/front/VueFront'],resolve)
-const VueIndex = resolve => require(['@/components/front/VueIndex'],resolve)
-const VueCategories = resolve => require(['@/components/front/VueCategories'],resolve)
-const VueTags = resolve => require(['@/components/front/VueTags'],resolve)
-const VueArchives = resolve => require(['@/components/front/VueArchives'],resolve)
-const VueAbout = resolve => require(['@/components/front/VueAbout'],resolve)
-const VueCategoryItem = resolve => require(['@/components/front/VueCategoryItem'],resolve)
-const VueTagItem = resolve => require(['@/components/front/VueTagItem'],resolve)
-const VueArticle = resolve => require(['@/components/front/VueArticle'],resolve)
-
+const VueFront = r => require.ensure([], () => r(require('@/components/front/VueFront')), 'VueFront')
+const VueIndex = r => require.ensure([], () => r(require('@/components/front/VueIndex')), 'VueIndex')
+const VueCategories = r => require.ensure([], () => r(require('@/components/front/VueCategories')), 'VueCategories')
+const VueTags = r => require.ensure([], () => r(require('@/components/front/VueTags')), 'VueTags')
+const VueArchives = r => require.ensure([], () => r(require('@/components/front/VueArchives')), 'VueArchives')
+const VueAbout = r => require.ensure([], () => r(require('@/components/front/VueAbout')), 'VueAbout')
+const VueCategoryItem = r => require.ensure([], () => r(require('@/components/front/VueCategoryItem')), 'VueCategoryItem')
+const VueTagItem = r => require.ensure([], () => r(require('@/components/front/VueTagItem')), 'VueTagItem')
+const VueArticle = r => require.ensure([], () => r(require('@/components/front/VueArticle')), 'VueArticle')
 
 //后台
-const VueBack = resolve => require(['@/components/back/VueBack'],resolve)
-const VueBackLogin = resolve => require(['@/components/back/VueBackLogin'],resolve)
-const VueBackOverview = resolve => require(['@/components/back/VueBackOverview'],resolve)
-const VueBackNewBlog = resolve => require(['@/components/back/VueBackNewBlog'],resolve)
-const VueBackArticleSet = resolve => require(['@/components/back/VueBackArticleSet'],resolve)
-const VueBackCategoriesSet = resolve => require(['@/components/back/VueBackCategoriesSet'],resolve)
-const VueBackTagsSet = resolve => require(['@/components/back/VueBackTagsSet'],resolve)
+const VueBack = r => require.ensure([], () => r(require('@/components/back/VueBack')), 'VueBack')
+const VueBackLogin = r => require.ensure([], () => r(require('@/components/back/VueBackLogin')), 'VueBackLogin')
+const VueBackOverview = r => require.ensure([], () => r(require('@/components/back/VueBackOverview')), 'VueBackOverview')
+const VueBackNewBlog = r => require.ensure([], () => r(require('@/components/back/VueBackNewBlog')), 'VueBackNewBlog')
+const VueBackArticleSet = r => require.ensure([], () => r(require('@/components/back/VueBackArticleSet')), 'VueBackArticleSet')
+const VueBackCategoriesSet = r => require.ensure([], () => r(require('@/components/back/VueBackCategoriesSet')), 'VueBackCategoriesSet')
+const VueBackTagsSet = r => require.ensure([], () => r(require('@/components/back/VueBackTagsSet')), 'VueBackTagsSet')
 
 Vue.use(Router)
 export default new Router({
