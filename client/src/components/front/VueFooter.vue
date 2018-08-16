@@ -2,7 +2,7 @@
 	<div class="footer">
 		<div class="black">
 			<p>&copy; {{year}}&ensp;&hearts;&ensp;Forest</p>
-			<p><a class="icp" href="http://www.miitbeian.gov.cn/">皖ICP备18005339号</a>&ensp;&ensp;作者：<router-link to='/about'>{{userName}}</router-link></p>
+			<p><a class="icp" href="http://www.miitbeian.gov.cn/">皖ICP备18017034号</a>&ensp;&ensp;作者：<router-link to='/about'>{{userName}}</router-link></p>
 		</div>
 		<mu-icon-button class="backtop" @click="backTop">
 			<i class="iconfont">&#xe683;</i>
