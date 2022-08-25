@@ -1,1 +1,1 @@
-mongod --config D:\mongodConfig\vue_blog.conf
+mongod --config ./mongod.conf

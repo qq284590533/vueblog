@@ -3,7 +3,7 @@
 
 import Vue from 'vue'
 import App from './App'
-import router from './router/router.config'
+import router from './router'
 import './assets/css/mdEdit.css'
 import './assets/css/animate.css'
 import './assets/css/main.css'
